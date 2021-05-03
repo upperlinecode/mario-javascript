@@ -14,7 +14,7 @@ If you just made a list, it's definitely too long. You'll be able to spend quite
 
 ### Step One: Walking sideways
 
-1. Use a big horizontal rectangle to draw the ground, and a much smaller vertical rectangle to draw Mario.
+1. Use a big horizontal brown or green rectangle to draw the ground, and draw a much smaller vertical red rectangle to symbolize Mario.
 
 2. Create an object called `mario` to store Mario's position and velocity. It should include `x`, `y`, `vx`, and `vy` components. Initialize this object to have Mario standing still on the ground, and change the coordinates used by `rect` to draw him dynamically at the stored position.
 
@@ -28,7 +28,7 @@ If you just made a list, it's definitely too long. You'll be able to spend quite
 
 2. Now introduce gravity. That is, increase `mario.vy` by a small amount each frame, so long as he is not touching the ground.
 
-3. You'll also probably want to stop Mario from jumping when he is not touching the ground. A simple codnitional that checks `mario.y` will likely do.
+3. You may also want to stop Mario from jumping when he is not touching the ground. A simple conditional that checks `mario.y` will likely do.
 
 ### Continuations
 
