@@ -17,6 +17,7 @@ If you just made a list, it's definitely too long. You'll be able to spend quite
 1. Use a big horizontal brown or green rectangle to draw the ground, and draw a much smaller vertical red rectangle to symbolize Mario.
 
 2. Create an object called `mario` to store Mario's position and velocity. It should include `x`, `y`, `vx`, and `vy` components. Initialize this object to have Mario standing still on the ground, and change the coordinates used by `rect` to draw him dynamically at the stored position.
+    * You're welcome to code out Mario as a class, but since we'll probably only ever need a single instance of him at a time, a plain object is a good place to start - you can always refactor him later. 
 
 3. Even though you're not yet using them, increment `mario.x` and `mario.y` by `mario.vx` and `mario.vy`, respectively, each time the `draw` loop runs.
 
