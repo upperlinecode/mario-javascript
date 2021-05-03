@@ -6,7 +6,7 @@
 
 Mario is plumber with a family of games in which he jumps around from platform to platform killing monsters and collecting coins. If you haven't actually played a Mario game, you've probably played other platformers which are similar.
 
-While any real Mario game is far too complex for you to recreate right now, you can learn a lot from trying to implement some of the essential elements in p5. This activity is fairly self-guided, so start off with you partner deciding what elements of the game you'd like to try to recreate.
+While we don't have enough time to recreate a full-fledged platformer right now, you can learn a lot from trying to implement some of the essential elements in p5. This activity is fairly self-guided, so start off with you partner deciding what elements of the game you'd like to try to recreate.
 
 If you just made a list, it's definitely too long. You'll be able to spend quite some time just getting movement (and especially jumping) to work.
 
