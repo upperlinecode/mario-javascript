@@ -6,17 +6,31 @@
 
 Mario is plumber with a family of games in which he jumps around from platform to platform killing monsters and collecting coins. If you haven't actually played a Mario game, you've probably played other platformers which are similar.
 
-While any real Mario game is far too complex for you to recreate right now, you can learn a lot from trying to implement some of the essential elements in p5. This activity is extremely self-guided, so start off with you partner deciding what elements of the game you'd like to try to recreate.
+While any real Mario game is far too complex for you to recreate right now, you can learn a lot from trying to implement some of the essential elements in p5. This activity is fairly self-guided, so start off with you partner deciding what elements of the game you'd like to try to recreate.
 
 If you just made a list, it's definitely too long. You'll be able to spend quite some time just getting movement (and especially jumping) to work.
 
 ## A Possible Beginning
 
-To keep things simple, you should start off with a continuous ground (no actual platforms that is). Create a character with a position and a velocity. Now think about how the player should interact with these values.
+### Step One: Walking sideways
 
-For example, you may decide it's alright for the left and right arrows to alter position directly, but that the space bar should just change the character's velocity. Or perhaps the left and right keys should also only touch velocity, and some kind of simulated friction can slow the character down.
+1. Use a big horizontal rectangle to draw the ground, and a much smaller vertical rectangle to draw Mario.
 
-At some point you'll have to implement gravity. This can be as simple as decrasing y-velocity each frame, so long as the character is on the ground. How can you stop the player from jumping again mid-air?
+2. Create an object called `mario` to store Mario's position and velocity. It should include `x`, `y`, `vx`, and `vy` components. Initialize this object to have Mario standing still on the ground, and change the coordinates used by `rect` to draw him dynamically at the stored position.
+
+3. Even though you're not yet using them, increment `mario.x` and `mario.y` by `mario.vx` and `mario.vy`, respectively, each time the `draw` loop runs.
+
+3. Create a definition for `function keyPressed()` in which we can make Mario react to user input. There are two main ways to make Mario walk: The first is to simply increase or decrease his `x` position when a key is pressed, and the second is to instead alter his `vx` property to send him moving in a certain direction. If you choose the latter, you'll need to introduce friction (that is, bring `mario.vx` a little closer to `0` each frame) to avoid him sliding too far.
+
+### Step Two: Jumping Mario
+
+1. Add a conditional to `keyPressed` which sets `mario.vy` to something negative when the up arrow (or spacebar if you prefer) is pressed. You should see him float off the top of the screen.
+
+2. Now introduce gravity. That is, increase `mario.vy` by a small amount each frame, so long as he is not touching the ground.
+
+3. You'll also probably want to stop Mario from jumping when he is not touching the ground. A simple codnitional that checks `mario.y` will likely do.
+
+### Continuations
 
 If you have movement working to your satisfaction (and you may very well not get to this point), there are lots of possible next steps. Perhaps you want to add platforms above the ground. Perhaps you want to add a waddling enemy.
 
