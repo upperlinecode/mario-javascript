@@ -1,6 +1,6 @@
 # Plumber Platformer
 
-[![Run on Repl.it](https://repl.it/badge/github/upperlinecode/mario-javascript)](https://repl.it/github/upperlinecode/mario-javascript)
+[![Run on Repl.it](https://repl.it/badge/github/upperlinecode/plumber-game-p5)](https://repl.it/github/upperlinecode/plumber-game-p5)
 
 ## What We're Building
 
